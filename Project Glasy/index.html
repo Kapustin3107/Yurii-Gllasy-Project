@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gllacy Shop</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -26,13 +27,13 @@
 				</ul>
 			</nav>
 			<div class="main-header-user">
-				<a class="main-header-search" href="#"><img src="img/main-header-search.png" alt="Поиск"></a>
-					<div class="user-search">
+					<a class="main-header-search" href="#"><img src="img/main-header-search.png" alt="Поиск"></a>
+					<div class="user-search hidden">
 						<form action="#" method="post">
 							<input type="text" placeholder="Что ищем?">
 						</form>
 					</div>
-				<a class="main-header-login" href="#"><img src="img/main-header-login.png" alt="Вход">Вход</a>
+					<a class="main-header-login" href="#"><img src="img/main-header-login.png" alt="Вход">Вход</a>
 					<div class="user-login hidden">
 						<form action="#" method="post">
 							<input type="text" name="email" placeholder="Электронная почта">
@@ -48,12 +49,12 @@
 			</div>
 			<div class="main-header-info">
 				С 10 до 20, ежедневно <br>
-				8 812 450-25-25
+				<span class="main-header-phone">8 812 450-25-25</span>
 			</div>
 			<div class="main-header-slider">
 				<div class="slide slide-1">
 					<img src="img/Ice-cream slider.png" alt="Крем-брюле и пломбир с малиновым джемом">
-					<b class="slider-title">Крем-брюле и пломбир с малиновым джемом</b>
+					<p class="slider-title">Крем-брюле и пломбир <br> с малиновым джемом</p>
 				</div>
 				<div class="slide slide-2">
 					
@@ -62,11 +63,11 @@
 					
 				</div>
 				<div class="slider-switch">
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
+					<button></button>
+					<button></button>
+					<button></button>
 				</div>
-				<a class="slider-submit" href="3">Давайте оба!</a>
+				<a class="slider-submit btn" href="3">Давайте оба!</a>
 			</div>
 		</div>
 	</header>
@@ -156,13 +157,14 @@
 		<div class="container">
 			<div class="main-news-parts">
 				<article class="new-left">
-					<span>Новое в нашем блоге</span>
+					<p>Новое в нашем блоге</p>
 					<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
 				</article>
-				<div class="news-form">
+				<div class="new-right new-form">
 					<form action="#" method="">
-						<label for="email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </label>
-						<input type="text" name="email" placeholder="Электронная почта">
+						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+						<label for="news-email">Email</label>
+						<input type="text" id="news-email" name="email" placeholder="Электронная почта">
 						<button type="submit">Отправить</button>
 					</form>
 				</div>
@@ -185,9 +187,9 @@
 					<span class="phone">8 812 450-25-25</span> <br>
 					(с 10 до 20 ежедневно)
 				</p>
-				
+				<a class="btn" href="#">Форма обратной связи</a>
 			</div>
-			<a class="btn" href="#">Форма обратной связи</a>
+			
 		</div>
 	</section>
 	<!-- main-footer starts here -->
