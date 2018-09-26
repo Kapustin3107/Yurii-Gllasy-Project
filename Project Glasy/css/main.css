@@ -342,13 +342,21 @@ body{
 
 }
 	/*main-location starts here*/
+.main-location{
+
+}
+.map-wrapper{
+	position: relative;
+}
 .feedback-block{
 	background-color: #fff;
+	right: 0px;
 }
 /*footer starts here*/
 
 .main-footer{
 	min-height: 105px;
+	margin-top: 20px;
 }
 .footer-wrapper{
 	display: flex;
@@ -367,6 +375,14 @@ body{
 }
 .footer-social{
 	margin-right: 300px;
+	display: flex;
+	justify-content: space-between;
+}
+.footer-social a{
+	border: 1px solid transparent;
+	border-radius: 50%;
+	
+	margin-right: 4px;
 }
 .footer-info{
 	font-size: 13px;
