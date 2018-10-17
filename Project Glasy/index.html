@@ -8,111 +8,112 @@
 </head>
 <body>
 	<!-- header starts  here -->
-	<header class="main-header">
-		<div class="container">
-			<div class="header-flex-wrapper">
+	<div class="header-bg-wrapper">
+			<header class="main-header">
+			<div class="container">
+				<div class="header-flex-wrapper">
 
-				<div class="main-header-logo">
-					<img src="img/header-logo.png" alt="Gllacy Shop">
-				</div>
-				<nav class="main-header-menu">
-					<ul class="main-menu">
-						<li><a href="Catalog.html">Каталог</a>
-							<ul class="submenu">
-								<li><a href="#">Новинки</a></li>
-								<li><a href="#">Сливочное</a></li>
-								<li><a href="#">Щербеты</a></li>
-								<li><a href="#">Фруктовый лед</a></li>
-								<li><a href="#">Мелорин</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Доставка и оплата</a></li>
-						<li><a href="#">О Компании</a></li>
-					</ul>
-				</nav>
-				<nav class="main-header-user">
-					<ul>
-						<li><a class="main-header-search" href="#"><img src="img/main-header-search.png" alt="Поиск"></a></li>
-						<li><a class="main-header-login" href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
-								Вход</a></li>
-						<li><a class="main-header-cart" href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
-						Пусто</a></li>
-					</ul>
-				</nav>
-			</div>
-			
-			
-			<div class="modal">
-					<div class="user-search hidden">
-						<form action="#" method="post">
-							<input type="text" placeholder="Что ищем?">
-						</form>
+					<div class="main-header-logo">
+						<img src="img/header-logo.png" alt="Gllacy Shop">
 					</div>
-					
-					<div class="user-login hidden">
-						<form action="#" method="post">
-							<input type="text" name="email" placeholder="Электронная почта">
-							<input type="text" name="password" placeholder="Пароль">
-							<button type="submit">Войти</button>
-								<div class="form-options">
-									<a href="#">Забыли пароль?</a>
-									<a href="#">Новая регистрация</a>
+					<nav class="main-header-menu">
+						<ul class="main-menu">
+							<li><a href="Catalog.html">Каталог</a>
+								<ul class="menu-drop">
+									<li><a href="#">Новинки</a></li>
+									<li><a href="#">Сливочное</a></li>
+									<li><a href="#">Щербеты</a></li>
+									<li><a href="#">Фруктовый лед</a></li>
+									<li><a href="#">Мелорин</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">О Компании</a></li>
+						</ul>
+						
+					</nav>
+					<nav class="main-header-user">
+						<ul>
+							<li><a class="main-header-search" href="#"></a>
+								<div class="user-search-form">
+									<form action="#" method="post">
+										<input type="text" placeholder="Что ищем?">
+									</form>
 								</div>
-						</form>
-					</div>
-				
-			</div>
-
-			<div class="main-header-info">
-				С 10 до 20, ежедневно <br>
-				<span class="main-header-phone">8 812 450-25-25</span>
-			</div>
-
-
-			<div class="main-header-slider">
-				<div class="slide slide-1">
-					<img src="img/Ice-cream slider.png" alt="Крем-брюле и пломбир с малиновым джемом">
-					<p class="slider-title">Крем-брюле и пломбир <br> с малиновым джемом</p>
+							</li>
+							<li><a class="main-header-login" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+									Вход</a>
+									<div class="user-login-form">
+										<form action="#" method="post">
+											<input type="text" name="email" placeholder="Электронная почта">
+											<input type="password" name="password" placeholder="Пароль">
+											<button type="submit" class="btn">Войти</button>
+												<div class="form-options">
+													<a href="#">Забыли пароль?</a>
+													<a href="#">Новая регистрация</a>
+												</div>
+										</form>
+									</div>
+								</li>
+							<li><a class="main-header-cart" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
+							Пусто</a></li>
+						</ul>
+					</nav>
 				</div>
-				<div class="slide slide-2">
+				
+
+				<div class="main-header-info">
+					С 10 до 20, ежедневно <br>
+					<span class="main-header-phone">8 812 450-25-25</span>
+				</div>
+
+
+				<div class="main-header-slider">
+					<div class="slide slide-1">
+						<img src="img/Ice-cream slider.png" alt="Крем-брюле и пломбир с малиновым джемом">
+						<p class="slider-title">Крем-брюле и пломбир <br> с малиновым джемом</p>
+					</div>
+					<div class="slide slide-2">
+						
+					</div>
+					<div class="slide slide-3">
+						
+					</div>
+					<div class="slider-control">
+						<div class="slider-switch">
+							<button class="slider-switch-btn"> </button>
+							<button class="slider-switch-btn"> </button>
+							<button class="slider-switch-btn"> </button>
+						</div>
+						<button class="slider-submit btn" href="3">Давайте оба!</button>
+					</div>
+					
 					
 				</div>
-				<div class="slide slide-3">
-					
-				</div>
-				<div class="slider-control">
-					<div class="slider-switch">
-						<button class="slider-switch-btn"> </button>
-						<button class="slider-switch-btn"> </button>
-						<button class="slider-switch-btn"> </button>
-					</div>
-					<button class="slider-submit btn" href="3">Давайте оба!</button>
+			</div>
+		</header>
+		<!-- main-promo starts here -->
+		<div class="main-promo">
+			<div class="container">
+				<div class="promo-items">
+						<article class="promo-item promo-left">
+							<h2 class="promo-item-title">Малинка даром!</h2>
+							<p class="promo-item-descr">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+							<a class="btn promo-btn" href="#">Хочу варенье!</a>
+						</article>
+						<article class="promo-item promo-right">
+							<h2 class="promo-item-title">Шоколадки даром!</h2>
+							<p class="promo-item-descr">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+							<a class="btn promo-btn" href="#">Хочу шоколадки!</a>
+						</article>
 				</div>
 				
-				
 			</div>
-		</div>
-	</header>
-	<!-- main-promo starts here -->
-	<div class="main-promo">
-		<div class="container">
-			<div class="promo-items">
-					<article class="promo-item promo-left">
-						<h2 class="promo-item-title">Малинка даром!</h2>
-						<p class="promo-item-descr">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-						<a class="btn promo-btn" href="#">Хочу варенье!</a>
-					</article>
-					<article class="promo-item promo-right">
-						<h2 class="promo-item-title">Шоколадки даром!</h2>
-						<p class="promo-item-descr">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-						<a class="btn promo-btn" href="#">Хочу шоколадки!</a>
-					</article>
-			</div>
-			
 		</div>
 	</div>
+	
 	<!-- main-catalog starts here -->
 	<section class="main-catalog">
 		<div class="container">
@@ -189,7 +190,7 @@
 						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 						<label for="news-email">Email</label>
 						<input type="text" id="news-email" name="email" placeholder="Электронная почта">
-						<button type="submit">Отправить</button>
+						<button type="submit" class="btn">Отправить</button>
 					</form>
 				</div>
 			</div>
@@ -203,18 +204,21 @@
 					<p>
 						Адрес главного офиса <br>
 						и офлайн-магазина: <br>
-						ул. Большая Конюшенная <br>
-						19/8, Санкт-Петербург
+						<b>ул. Большая Конюшенная <br>
+						19/8, Санкт-Петербург</b>
 					</p>
 					<p>
 						Для заказов по телефону: <br>
-						<span class="phone">8 812 450-25-25</span> <br>
+						<b>8 812 450-25-25</b><br>
 						(с 10 до 20 ежедневно)
 					</p>
-					<a class="btn" href="#">Форма обратной связи</a>
+					<a class="btn feedback-btn" href="#">Форма обратной связи</a>
 				</div>
+
+				<img src="img/map-pin.png" alt="pin" class="map-pin">
 			</div>
 			<img src="img/location.jpg" alt="Наше расположение" width="100%" >
+
 			
 			
 		</div>
