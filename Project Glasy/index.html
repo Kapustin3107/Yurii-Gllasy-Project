@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gllacy Shop</title>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -74,20 +76,22 @@
 					<div class="slide slide-1">
 						<img src="img/Ice-cream slider.png" alt="Крем-брюле и пломбир с малиновым джемом">
 						<p class="slider-title">Крем-брюле и пломбир <br> с малиновым джемом</p>
-					</div>
+					<!-- </div>
 					<div class="slide slide-2">
-						
+						<img src="img/Ice-cream slider.png" alt="Крем-брюле и пломбир с малиновым джемом">
+						<p class="slider-title">Крем-брюле и пломбир <br> с малиновым джемом</p>
 					</div>
 					<div class="slide slide-3">
-						
-					</div>
+						<img src="img/Ice-cream slider.png" alt="Крем-брюле и пломбир с малиновым джемом">
+						<p class="slider-title">Крем-брюле и пломбир <br> с малиновым джемом</p>
+					</div> -->
 					<div class="slider-control">
 						<div class="slider-switch">
 							<button class="slider-switch-btn"> </button>
 							<button class="slider-switch-btn"> </button>
 							<button class="slider-switch-btn"> </button>
 						</div>
-						<button class="slider-submit btn" href="3">Давайте оба!</button>
+						<a class="slider-submit btn" href="3">Давайте оба!</a>
 					</div>
 					
 					
@@ -125,6 +129,7 @@
 						</a>
 						<span class="catalog-item-price">310<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"/></svg>/кг</span>
 						<p>Сливочное с апельсиновым <br> джемом и цитрусовой стружкой</p>
+						<a href="#" class="btn quick-review" >Быстрый просмотр</a>
 					</li>
 					<li class="catalog-item">
 						<a href="#">
@@ -132,6 +137,7 @@
 						</a>
 						<span class="catalog-item-price">380<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"/></svg>/кг</span>
 						<p>Сливочно-кофейное с кусочками <br> шоколада</p>
+						<a href="#" class="btn quick-review" >Быстрый просмотр</a>
 					</li>
 					<li class="catalog-item">
 						<a href="#">
@@ -139,6 +145,7 @@
 						</a>
 						<span class="catalog-item-price">355<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"/></svg>/кг</span>
 						<p>Сливочно-клубничное с <br> присыпкой из белого шоколада</p>
+						<a href="#" class="btn quick-review" >Быстрый просмотр</a>
 					</li>
 					<li class="catalog-item">
 						<a href="#">
@@ -146,6 +153,7 @@
 						</a>
 						<span class="catalog-item-price">415<svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36"><path fill="#FFF" d="M11 21h7.451c5.247 0 9.5-4.253 9.5-9.5S23.698 2 18.451 2H6v14H2v5h4v3H2v5h4v4h5v-4h15v-5H11v-3zm0-14h7.451v-.03a4.53 4.53 0 0 1 0 9.06V16H11V7z"/></svg>/кг</span>
 						<p>Сливочное крем-брюле с <br> карамельной подливкой</p>
+						<a href="#" class="btn quick-review" >Быстрый просмотр</a>
 					</li>
 				</ul>
 			</div>
@@ -252,5 +260,26 @@
 			
 		</div>
 	</footer>
+
+	
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+	
+	
+
+
+				<script type="text/javascript">
+			    $(document).ready(function(){
+			      $('.main-header-slider').slick({
+							  dots: true,
+							  infinite: true,
+							  speed: 500,
+							  fade: true,
+							  cssEase: 'linear'
+							});
+			    });
+				</script>
+
 </body>
 </html>

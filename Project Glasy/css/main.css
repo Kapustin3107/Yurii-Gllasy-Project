@@ -24,11 +24,12 @@ body{
 	display: block;
 	color: #fff;
 	font-weight: bold;
-
+	cursor: pointer;
 	background: linear-gradient(to bottom, #f26843, #e74b36);
 	border-radius: 40px;
 	padding: 10px;
 }
+
 .container{
 /*	outline: 1px solid black;
 */	width: 1200px;
@@ -294,6 +295,11 @@ body{
 	margin-right: auto;
 	margin-left: auto;
 	cursor: pointer;
+	z-index: 1000;
+}
+.slider-submit:hover{
+	background-color: red;
+	
 }
 .slider-switch{
 	display: flex;
@@ -385,7 +391,7 @@ body{
 	font-size: 45px;
 	font-weight: bold;
 	position: absolute;
-	bottom: 80px;
+	bottom: 200px;
 }
 .catalog-item img{
 	border-radius: 50%;
@@ -396,6 +402,8 @@ body{
 	font-weight: medium;
 	line-height: 22px;
 	text-align: center;
+	margin: 0;
+	margin-bottom: 20px;
 }
 /*main-features starts here*/
 .main-features{
@@ -750,6 +758,29 @@ input[type="checkbox"]:checked + i:after{
 /**/
 .catalog-items{
 	color: #fff;
+}
+.catalog-item{
+	box-sizing: border-box;
+	padding: 10px;
+	min-height: 415px;
+	
+	transition: 1s;
+
+}
+.catalog-item:hover{
+	border-radius: 20px;
+	background-color: #9db1a5;
+}
+.quick-review{
+	display: none;
+	width: 200px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 auto;
+
+}
+.catalog-item:hover .quick-review{
+	display: block;
 }
 /**/
 .catalog-footer .footer-wrapper{
